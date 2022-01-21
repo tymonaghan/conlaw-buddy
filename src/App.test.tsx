@@ -2,8 +2,9 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+// https://create-react-app.dev/docs/running-tests#writing-tests
+test('renders the "conlaw buddy" app name', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/conlaw-buddy/i);
   expect(linkElement).toBeInTheDocument();
 });
