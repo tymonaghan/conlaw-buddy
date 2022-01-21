@@ -1,19 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import Home from './components/Home';
+import { Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/componentIndex';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to the conlaw-buddy app!</h1>
-      </header>
-      <Home />
+      <Navbar />
+      <h1>Greetings from App.tsx (conlaw-buddy app)</h1>
+      <div>
+        <Routes>
+          <Route
+            path="/"
+            element={<p>React Router checking in. This is the * route.</p>}
+          />
+        </Routes>
+      </div>
     </div>
   );
 }
