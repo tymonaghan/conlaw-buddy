@@ -13,25 +13,34 @@ test('renders the "conlaw buddy" app name', () => {
   const linkElement = screen.getByText(/conlaw-buddy/i);
   expect(linkElement).toBeInTheDocument();
 });
-
-test('renders the navbar', () => {
+test('renders the react bootstrap alert', () => {
   render(
     <Router>
       <App />
     </Router>
   );
-  const linkElement = screen.getByText(/MUI/i);
+  const linkElement = screen.getByText(/react-bootstrap alert/i);
   expect(linkElement).toBeInTheDocument();
 });
 
-test('renders the React Router * route', () => {
-  render(
-    <Router>
-      <App />
-    </Router>
-  );
-  const linkElement = screen.getByText(
-    /React Router checking in. This is the \* route/i
-  );
-  expect(linkElement).toBeInTheDocument();
-});
+// test('renders the navbar', () => {
+//   render(
+//     <Router>
+//       <App />
+//     </Router>
+//   );
+//   const linkElement = screen.getByText(/conlaw-buddy/i);
+//   expect(linkElement).toBeInTheDocument();
+// });
+
+// test('renders the React Router * route', () => {
+//   render(
+//     <Router>
+//       <App />
+//     </Router>
+//   );
+//   const linkElement = screen.getByText(
+//     /React Router checking in. This is the \* route/i
+//   );
+//   expect(linkElement).toBeInTheDocument();
+// });
