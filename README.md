@@ -4,7 +4,7 @@ A tool to search the US Constitution and relevant Supreme Court cases.
 
 ## development
 
-conlaw-buddy is created and developed by Tyler Monaghan for FSA-2111 Stackathon. Special thanks to Sarah Norise.
+conlaw-buddy is created and developed by Tyler Monaghan for FSA-2111 Stackathon. Special thanks to Sarah Norise for suggesting the app idea and consultation about app design and Constitutional law.
 
 Built with React, create-react-app, TypeScript, and Material UI.
 
